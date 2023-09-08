@@ -43,8 +43,8 @@ class HomeFragment : Fragment() {
         val resultLayout: CardView = view.findViewById(R.id.resultLayout)
         val topAppBar: MaterialToolbar = view.findViewById(R.id.topAppBar)
 
-        topAppBar.title = "Calculation App"
-        topAppBar.setNavigationIcon(R.drawable.baseline_cyclone_24)
+        topAppBar.title = getString(R.string.app_name)
+        topAppBar.setNavigationIcon(R.drawable.app_icon_drawable)
         fetchResultButton.setOnClickListener {
             getData(expressionInputText.text.toString(), view)
             resultLayout.visibility = View.VISIBLE
@@ -92,22 +92,23 @@ class HomeFragment : Fragment() {
                 } else {
                     // Handle API error
                     val errorBody = response.errorBody()?.string()
-                    Log.e("API_ERROR", "HTTP ${response.code()}: $errorBody")
-                    Toast.makeText(context, "API error", Toast.LENGTH_SHORT).show()
+                    Log.e("API_ERROR", "${response.code()}: $errorBody")
+                    Toast.makeText(context, "Please enter the valid input", Toast.LENGTH_SHORT)
+                        .show()
                 }
             }
 
             override fun onFailure(call: Call<MathApiResponse>, error: Throwable) {
                 // Handle network failure
-                Log.e("ERROR", "HTTP $error")
+                Log.e("NETWORK_ERROR", "HTTP $error")
                 Toast.makeText(context, "Unable to fetch the result", Toast.LENGTH_SHORT).show()
-
             }
         })
 
     }
 
     private fun insertData(result: String, dateAndTime: String) {
+        // Insert the data into the Room database
         viewModel.insertTodoData(HistoryDataClass(0, result, dateAndTime))
     }
 }

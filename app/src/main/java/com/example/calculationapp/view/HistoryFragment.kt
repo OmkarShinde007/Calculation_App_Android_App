@@ -14,6 +14,10 @@ import com.example.calculationapp.viewmodel.HistoryDataViewModel
 import com.example.todoapp.R
 import com.google.android.material.appbar.MaterialToolbar
 
+/** Fragment used to displayed the history of the calculated expressions
+ * and its results. It store this data into
+ * room database.
+ */
 class HistoryFragment : Fragment() {
 
     private lateinit var todoListRecyclerView: RecyclerView
@@ -31,7 +35,7 @@ class HistoryFragment : Fragment() {
         todoListRecyclerView.layoutManager = LinearLayoutManager(requireActivity())
         recyclerViewAdapter = HistoryListAdapter(context)
         topAppBar = view.findViewById(R.id.topAppBar)
-        topAppBar.title = "Calculation History"
+        topAppBar.title = getString(R.string.history_screen_toolbar_title)
         topAppBar.setNavigationOnClickListener {
             requireActivity().onBackPressed()
         }

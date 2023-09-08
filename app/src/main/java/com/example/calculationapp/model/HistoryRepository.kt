@@ -2,7 +2,7 @@ package com.example.calculationapp.model
 
 import androidx.lifecycle.LiveData
 
-/** Class used to send the instruction to the ToDoDAO. */
+/** Class used to send the instruction to the HistoryDao. */
 class HistoryRepository(private val historyDao: HistoryDao) {
 
     // Get All the data from the database.

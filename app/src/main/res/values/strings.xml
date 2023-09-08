@@ -2,4 +2,8 @@
     <string name="app_name">Calculation App</string>
     <string name="add_fragment_title_text">Add ToDo Data</string>
     <string name="update_fragment_title_text">Update ToDo Data</string>
+    <string name="home_scree_button_text">Fetch Result</string>
+    <string name="result_title">Expressions Result</string>
+    <string name="history_screen_toolbar_title">Calculation History</string>
+    <string name="default_result_text">There is no expression result</string>
 </resources>

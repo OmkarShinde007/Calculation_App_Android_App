@@ -21,7 +21,7 @@
             android:id="@+id/topAppBar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:navigationIcon="@drawable/baseline_arrow_back_ios_24" />
+            app:navigationIcon="@drawable/back_arrow_drawable" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <ScrollView
@@ -62,7 +62,7 @@
                 android:layout_marginHorizontal="40dp"
                 android:layout_marginTop="40dp"
                 android:backgroundTint="@color/button_color"
-                android:text="Fetch Result"
+                android:text="@string/home_scree_button_text"
                 app:cornerRadius="30dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -86,7 +86,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
-                    android:text="Results"
+                    android:text="@string/result_title"
+                    android:textColor="@color/black"
                     android:textSize="20dp"
                     android:textStyle="bold" />
 
@@ -95,8 +96,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:minHeight="90dp"
+                    android:text="@string/default_result_text"
                     android:textSize="16dp"
                     android:textStyle="bold" />
 
@@ -116,7 +118,7 @@
         android:layout_marginBottom="30dp"
         android:backgroundTint="@color/button_color"
         android:clickable="true"
-        android:src="@drawable/outline_history_24"
+        android:src="@drawable/history_drawable"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
