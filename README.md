@@ -24,12 +24,12 @@ Develop an Expression Calculation App with the following specifications:
 **Additional Resources:**
 
 **Video:**
-- [Demo App Functionalities] (https://drive.google.com/file/d/1WcKySmoqnAreYJIqYeSFJpDo3srJ_xNO/view?usp=drive_link)
-- [Demo Multiple Expression](https://drive.google.com/file/d/1QIYmsiwyHAm-g72vRhPez9zW8jrqEqCO/view?usp=drive_link)
+- [Demo App Functionalities](https://drive.google.com/file/d/1WcKySmoqnAreYJIqYeSFJpDo3srJ_xNO/view?usp=drive_link)
+- [Demo Multiple Expression](https://drive.google.com/file/d/1velsyRnH0IwuOZ95t8pBxPZGXLu0Gvhv/view?usp=drive_link)
 
 **Screenshots:**
-- [Home Screen Default] (https://drive.google.com/file/d/1KR-O1lf5UiptgXijS_uJFfar2uHQCS_C/view?usp=drive_link)
-- [Home Screen Input]( https://drive.google.com/file/d/1R6w4n-u3hmatrw6ZS5S4SCnhacpDB1Ed/view?usp=drive_link)
+- [Home Screen Default](https://drive.google.com/file/d/1KR-O1lf5UiptgXijS_uJFfar2uHQCS_C/view?usp=drive_link)
+- [Home Screen Input](https://drive.google.com/file/d/1R6w4n-u3hmatrw6ZS5S4SCnhacpDB1Ed/view?usp=drive_link)
 - [History Screen](https://drive.google.com/file/d/16gomrWHfQFgWPEXBVd0vLgVlesaAfjow/view?usp=drive_link)
 
 **App Bundle :** https://drive.google.com/drive/folders/1xHwbtffzgvon3tNPSRoh4i7TOBZ-mDTC?usp=drive_link
