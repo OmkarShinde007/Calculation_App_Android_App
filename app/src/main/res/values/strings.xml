@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Calculation App</string>
+    <string name="add_fragment_title_text">Add ToDo Data</string>
+    <string name="update_fragment_title_text">Update ToDo Data</string>
+</resources>
