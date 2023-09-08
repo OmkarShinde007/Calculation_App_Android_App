@@ -45,6 +45,7 @@ android {
 }
 
 dependencies {
+    testImplementation("org.junit.jupiter:junit-jupiter:5.8.1")
     val lifecycle_version = "2.6.1"
     val room_version = "2.5.2"
     val kotlin_version = "1.8.20"

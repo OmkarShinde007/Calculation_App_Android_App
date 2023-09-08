@@ -30,6 +30,10 @@ import java.util.Locale
 class HomeFragment : Fragment() {
 
     private lateinit var viewModel: HistoryDataViewModel
+    private lateinit var expressionInputText: TextInputEditText
+    private lateinit var fetchResultButton: MaterialButton
+    private lateinit var resultLayout: CardView
+    private lateinit var topAppBar: MaterialToolbar
 
     @SuppressLint("MissingInflatedId")
     override fun onCreateView(
@@ -38,10 +42,10 @@ class HomeFragment : Fragment() {
     ): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        val expressionInputText: TextInputEditText = view.findViewById(R.id.expressionInput)
-        val fetchResultButton: MaterialButton = view.findViewById(R.id.calculateResultButton)
-        val resultLayout: CardView = view.findViewById(R.id.resultLayout)
-        val topAppBar: MaterialToolbar = view.findViewById(R.id.topAppBar)
+        expressionInputText = view.findViewById(R.id.expressionInput)
+        fetchResultButton = view.findViewById(R.id.calculateResultButton)
+        resultLayout = view.findViewById(R.id.resultLayout)
+        topAppBar = view.findViewById(R.id.topAppBar)
 
         topAppBar.title = getString(R.string.app_name)
         topAppBar.setNavigationIcon(R.drawable.app_icon_drawable)
@@ -87,6 +91,7 @@ class HomeFragment : Fragment() {
                     expressionOutput.text = temp
                     val sdf = SimpleDateFormat("E, dd MMM yyyy HH:mm", Locale.getDefault())
                     val currentDateAndTime: String = sdf.format(Date())
+                    expressionInputText.setText("")
                     insertData(temp, currentDateAndTime)
                     // Handle the results (list of Double values)
                 } else {
